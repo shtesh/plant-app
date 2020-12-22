@@ -1,0 +1,25 @@
+{
+  "name": "plant-app",
+  "version": "1.0.0",
+  "description": "Description Search platform for plants with a feature of creating the personalized favorite list of plants. The user registers, starts the session, closes the session. The user searches for a plant from a database. The user adds the plant to his/her Favorites list. The user is able to edit and delete the plant saved to his/her Favorites list.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shtesh/plant-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shtesh/plant-app/issues"
+  },
+  "homepage": "https://github.com/shtesh/plant-app#readme",
+  "dependencies": {
+    "mongo": "^0.1.0",
+    "nodemon": "^2.0.6"
+  }
+}
