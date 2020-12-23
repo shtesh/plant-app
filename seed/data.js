@@ -176,7 +176,7 @@ module.exports = [
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
         native: ['Nicaragua','Panamá','Bolivia','Brazil North','Brazil Northeast','Brazil Southeast','Brazil West-Central','Colombia','Ecuador','El Salvador','Honduras','Brazil South','Peru','Venezuela','Belize','Costa Rica','Guatemala','Guyana','Mexico Southeast','Paraguay','Argentina Northeast','Uruguay','Argentina Northwest'],
-        tags: [White,Yellow flowers, foliage, fruits],                            
+        tags: ['White','Yellow flowers','foliage','fruits'],                            
         imageURL: 'https://bs.floristic.org/image/o/94a698a9fce276f4b9eaae9ff69d45e7b8920998'
     },
     {
