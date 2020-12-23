@@ -7,8 +7,8 @@ const PlantSchema = new Schema(
     height: Number,                        
     light: String,                               
     floweringTime: String,               
-    native: String,
-    tags: String,                            
+    native: [String],
+    tags: [String],                            
     imageURL: String                       
     },
     {
