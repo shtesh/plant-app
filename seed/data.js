@@ -1,4 +1,4 @@
-module.exports = [
+const plants = [
     {
         name: 'Citrus japonica',                              
         height: '120',                        
@@ -179,6 +179,126 @@ module.exports = [
         tags: ['White','Yellow flowers','foliage','fruits'],                            
         imageURL: 'https://bs.floristic.org/image/o/94a698a9fce276f4b9eaae9ff69d45e7b8920998'
     },
+    {
+        name: "Picea laxa",
+        floweringTime: "Non-flowering",
+        height: "4166",
+        imageURL: "https://trefle.io/explore/species/picea-laxa#specifications",
+        light: "Full daylight",
+        native: "USA"
+      },
+      {
+      name: "Lavandula latifolia",
+      height: "66",
+      light: "Full daylight with a lot of direct sunlight",
+      floweringTime: "Summer",
+      native: "France",
+      imageURL: "https://trefle.io/explore/species/lavandula-latifolia"
+    },
+    {
+        name: "Echeveria elegans",
+        height: "10",
+        light: "Full sun",
+        floweringTime: "Summer",
+        native: "Mexico",
+        imageURL: "https://trefle.io/explore/species/echeveria-elegans#specifications"
+      },
+      {
+        name: "Monstera deliciosa",
+        height: "2000",
+        light: "Bright, indirect sunlight",
+        floweringTime: "Non-flowering",
+        native: "Mexico",
+        imageURL: "https://trefle.io/explore/species/monstera-deliciosa#specifications"
+      },
+      {
+        name: "Hydrangea macrophylla",
+        height: "121",
+        light: "Full sun",
+        floweringTime: "Summer",
+        native: "Japan",
+        imageURL: "https://trefle.io/explore/species/hydrangea-macrophylla#specifications"
+      },
+      {
+        name: "Codiaeum variegatum",
+        height: "30",
+        light: "Bright, indirect light",
+        floweringTime: "Autumn",
+        native: "Malaysia",
+        imageURL: "https://trefle.io/explore/species/codiaeum-variegatum"
+      },
+      {
+        name: "Fragaria vesca",
+        height: "20",
+        light: "Indirect light",
+        floweringTime: "Summer",
+        native: "Russia",
+        imageURL: "https://trefle.io/explore/species/fragaria-vesca#specifications"
+      },
+      {
+        name: " Paeonia mascula",
+        height: "75",
+        light: "Full daylight without direct sunlight ",
+        floweringTime: "Summer",
+        native: "France",
+        imageURL: "https://trefle.io/explore/species/paeonia-mascula"
+      },
+      {
+        name: " Hyacinthus orientalis",
+        height: "15",
+        light: "Full daylight with some direct sunlight",
+        floweringTime: "Spring",
+        native: "Israel",
+        imageURL: "https://trefle.io/explore/species/hyacinthus-orientalis"
+      },
+      {
+        name: "Phalaenopsis amabilis",
+        height: "30",
+        light: "Indirect sunlight",
+        floweringTime: "Winter",
+        native: "Malaysia",
+        imageURL: "https://trefle.io/explore/species/phalaenopsis-amabilis"
+      },
+      {
+        name: "Rosa chinensis",
+        height: "100",
+        light: "Semi-shade",
+        floweringTime: "Summer",
+        native: "China",
+        imageURL: "https://trefle.io/explore/species/rosa-chinensis"
+      },
+      {
+        name: "Goeppertia crocata",
+        height: "40",
+        light: "Bright but indirect sunlight",
+        floweringTime: "Summer",
+        native: "Brazil",
+        imageURL: "https://trefle.io/explore/species/goeppertia-crocata#specifications"
+      },
+      {
+        name: "Ipheion uniflorum",
+        height: "15",
+        light: "Partial shade",
+        floweringTime: "Spring",
+        native: ["Argentina, Uruguay,Mexico"],
+        imageURL: "https://trefle.io/explore/species/ipheion-uniflorum#specifications"
+      },
+      {
+        name: "Crassula sarcocaulis",
+        height: "60",
+        light: "Full sun",
+        floweringTime: "Autumn",
+        native: "South Africa",
+        imageURL: "https://trefle.io/explore/species/crassula-sarcocaulis#specifications"
+      },
+      {
+        name: "Coriandrum sativum",
+        height: "50",
+        light: "Full daylight with some direct sunlight",
+        floweringTime: "Spring",
+        native: ["Turkey, Pakistan"],
+        imageURL: "https://trefle.io/explore/species/coriandrum-sativum"
+      },
     {
         name: ,                              
         height: ,                        
@@ -370,3 +490,4 @@ module.exports = [
     },
 
   ]
+  module.exports = {plants};
