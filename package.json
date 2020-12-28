@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/shtesh/plant-app#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "mongo": "^0.1.0",
     "nodemon": "^2.0.6"
   }

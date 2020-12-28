@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const path         = require('path');
+const bodyParser = require("body-parser");
 const connectDb = require("./config");
 const plantsRoutes = require("./routes/plant.routes");
 
@@ -24,6 +25,12 @@ hbs.registerPartials(`${__dirname}/views/partials/`);
 
 app.set('views', `${__dirname}/views`);
 app.set('view engine', 'hbs');
+const signUp = require('./routes/signup.routes');
+const login = require("./routes/login.routes");
+const main = require("./routes/main.routes");
+const private = require("./routes/private.routes");
+
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 
