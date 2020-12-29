@@ -27,9 +27,15 @@ app.set('views', `${__dirname}/views`);
 app.set('view engine', 'hbs');
 const signUp = require('./routes/signup.routes');
 const login = require("./routes/login.routes");
+const logout = require("./routes/logout.routes");
 const main = require("./routes/main.routes");
 const private = require("./routes/private.routes");
-
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use("/auth/signup", signUp);
+app.use("/auth/login", login);
+app.use("/auth/logout", logout);
+app.use("/main", main);
+app.use("/private", private);
 
 
 app.use(express.static(path.join(__dirname, 'public')));
