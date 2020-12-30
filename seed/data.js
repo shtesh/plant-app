@@ -183,7 +183,7 @@ const plants = [
         name: "Picea laxa",
         floweringTime: "Non-flowering",
         height: "4166",
-        imageURL: "https://trefle.io/explore/species/picea-laxa#specifications",
+        imageURL: "https://bs.floristic.org/image/o/dbba763d09342f393f024e8edfcd73cd2f08859f",
         light: "Full daylight",
         native: "USA"
       },
@@ -193,7 +193,7 @@ const plants = [
       light: "Full daylight with a lot of direct sunlight",
       floweringTime: "Summer",
       native: "France",
-      imageURL: "https://trefle.io/explore/species/lavandula-latifolia"
+      imageURL: "https://bs.floristic.org/image/o/5a5ace80216cd8376fe03d0bc07ff3941918ed5e"
     },
     {
         name: "Echeveria elegans",
@@ -201,7 +201,7 @@ const plants = [
         light: "Full sun",
         floweringTime: "Summer",
         native: "Mexico",
-        imageURL: "https://trefle.io/explore/species/echeveria-elegans#specifications"
+        imageURL: "https://bs.floristic.org/image/o/c2408475a0a634851900e8e72488a40d00d1f4de"
       },
       {
         name: "Monstera deliciosa",
@@ -209,7 +209,7 @@ const plants = [
         light: "Bright, indirect sunlight",
         floweringTime: "Non-flowering",
         native: "Mexico",
-        imageURL: "https://trefle.io/explore/species/monstera-deliciosa#specifications"
+        imageURL: "https://bs.floristic.org/image/o/49e00fd760f17781214aab972df77c65c2cb475f"
       },
       {
         name: "Hydrangea macrophylla",
@@ -217,7 +217,7 @@ const plants = [
         light: "Full sun",
         floweringTime: "Summer",
         native: "Japan",
-        imageURL: "https://trefle.io/explore/species/hydrangea-macrophylla#specifications"
+        imageURL: "https://bs.floristic.org/image/o/6427df08148d23bd58c332b1be6215c9700b69a9"
       },
       {
         name: "Codiaeum variegatum",
@@ -225,7 +225,7 @@ const plants = [
         light: "Bright, indirect light",
         floweringTime: "Autumn",
         native: "Malaysia",
-        imageURL: "https://trefle.io/explore/species/codiaeum-variegatum"
+        imageURL: "https://bs.floristic.org/image/o/02536f914f925bba5998df4c01c8c6870b68ed8a"
       },
       {
         name: "Fragaria vesca",
@@ -233,7 +233,7 @@ const plants = [
         light: "Indirect light",
         floweringTime: "Summer",
         native: "Russia",
-        imageURL: "https://trefle.io/explore/species/fragaria-vesca#specifications"
+        imageURL: "https://bs.floristic.org/image/o/d1c3c3f0c1192d34b8fe1dec4e0f315b54eed87c"
       },
       {
         name: " Paeonia mascula",
@@ -241,7 +241,7 @@ const plants = [
         light: "Full daylight without direct sunlight ",
         floweringTime: "Summer",
         native: "France",
-        imageURL: "https://trefle.io/explore/species/paeonia-mascula"
+        imageURL: "https://bs.floristic.org/image/o/e6b560e26ff2d2b8004d9e49088feebbf5bbcf90"
       },
       {
         name: " Hyacinthus orientalis",
@@ -249,7 +249,7 @@ const plants = [
         light: "Full daylight with some direct sunlight",
         floweringTime: "Spring",
         native: "Israel",
-        imageURL: "https://trefle.io/explore/species/hyacinthus-orientalis"
+        imageURL: "https://bs.floristic.org/image/o/2200abffbe1264c1be7c52e942543496da66f431"
       },
       {
         name: "Phalaenopsis amabilis",
@@ -257,7 +257,7 @@ const plants = [
         light: "Indirect sunlight",
         floweringTime: "Winter",
         native: "Malaysia",
-        imageURL: "https://trefle.io/explore/species/phalaenopsis-amabilis"
+        imageURL: "https://bs.floristic.org/image/o/54d56aefbc7b194c6591d114e6c9012bc2c9ffb6"
       },
       {
         name: "Rosa chinensis",
@@ -265,7 +265,7 @@ const plants = [
         light: "Semi-shade",
         floweringTime: "Summer",
         native: "China",
-        imageURL: "https://trefle.io/explore/species/rosa-chinensis"
+        imageURL: "https://bs.floristic.org/image/o/ecba96b634c69a8b9990f2faae4be0f590b209a6"
       },
       {
         name: "Goeppertia crocata",
@@ -273,7 +273,7 @@ const plants = [
         light: "Bright but indirect sunlight",
         floweringTime: "Summer",
         native: "Brazil",
-        imageURL: "https://trefle.io/explore/species/goeppertia-crocata#specifications"
+        imageURL: "https://bs.floristic.org/image/o/820b67e270e5b8c51930191435df09e583d3694a"
       },
       {
         name: "Ipheion uniflorum",
@@ -281,7 +281,7 @@ const plants = [
         light: "Partial shade",
         floweringTime: "Spring",
         native: ["Argentina, Uruguay,Mexico"],
-        imageURL: "https://trefle.io/explore/species/ipheion-uniflorum#specifications"
+        imageURL: "https://bs.floristic.org/image/o/dbfd45c7044758b2680e9333fc9251d12049f17f"
       },
       {
         name: "Crassula sarcocaulis",
@@ -289,7 +289,7 @@ const plants = [
         light: "Full sun",
         floweringTime: "Autumn",
         native: "South Africa",
-        imageURL: "https://trefle.io/explore/species/crassula-sarcocaulis#specifications"
+        imageURL: "https://bs.floristic.org/image/o/c0d475a110777f70480dfba304abe428170f067b"
       },
       {
         name: "Coriandrum sativum",
@@ -297,7 +297,7 @@ const plants = [
         light: "Full daylight with some direct sunlight",
         floweringTime: "Spring",
         native: ["Turkey, Pakistan"],
-        imageURL: "https://trefle.io/explore/species/coriandrum-sativum"
+        imageURL: "https://bs.floristic.org/image/o/b1370347c4cd41e2820f857c66310bf6c6454687"
       }
   ]
   module.exports = {plants};
