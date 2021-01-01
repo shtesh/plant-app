@@ -74,8 +74,8 @@ const signUp = async (req, res) => {
 
 const login = async (req, res) => {
     try {
-        const {password, email} = req.body;
-        const hasMissingCredential = !password || !email;
+        const {password, username, email} = req.body;
+        const hasMissingCredential = !password || !email || !username;
         if(hasMissingCredential) {
             return res.send('Missing credentials');
         }

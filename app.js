@@ -6,7 +6,7 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const path         = require('path');
 const bodyParser = require("body-parser");
-const connectDb = require("./config");
+const connectDb = require("./config/index");
 const plantsRoutes = require("./routes/plant.routes");
 
 connectDb ();

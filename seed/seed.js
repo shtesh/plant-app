@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Plant = require("../models/plant");
 const { plants } = require("./data");
-const connectDb = require("../config");
+const connectDb = require("../config/index");
 
 async function seedDb() {
   try {
