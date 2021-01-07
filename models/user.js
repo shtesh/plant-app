@@ -21,9 +21,13 @@ const UserSchema = new Schema(
             required: true,
             trim: true,
         },
+        pictureUrl: String,
     },
     {
-        timestamps: true
+        timestamps: {
+            createdAt: "created_at",
+            updatedAt: "updated_at"
+        }
     }
 );
 

@@ -1,18 +1,25 @@
-<form action="/plants" method="POST">
+<form action="/plants/add" method="POST">
 <input type="text" name="_method" value="{{restMethod}}" hidden>
     <label for="name">Name</label>
     <input type="text" name="name" id="name">
+    <br>
     <label for="height">Height</label>
     <input type="text" name="height" id="height">
+    <br>
     <label for="light">Light</label>
     <input type="text" name="light" id="light">
+    <br>
     <label for="floweringTime">Flowering time</label>
     <input type="text" name="floweringTime" id="floweringTime">
+    <br>
     <label for="native">Native</label>
     <input type="text" name="native" id="native">
+    <br>
     <label for="image">Image</label>
     <input type="image" name="image" id="image">
+    <br>
     <label for="tag">Tags</label>
     <input type="tag" name="tag" id="tag">
+    <br>
     <button type="submit">{{btnText}}</button>
 </form>

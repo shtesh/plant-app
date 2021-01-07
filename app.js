@@ -7,6 +7,7 @@ const mongoose     = require('mongoose');
 const path         = require('path');
 const bodyParser = require("body-parser");
 const cookieParser = require('cookie-parser');
+const createError = require("http-errors");
 
 const connectDb = require("./config/index");
 const plantsRoutes = require("./routes/plant.routes");
@@ -47,12 +48,20 @@ app.use("/private", private);
 
 
 app.use(express.static(path.join(__dirname, 'public')));
-
-
-
-
 app.get("/", (req, res) => res.render("index"));
 app.use("/plants", plantsRoutes);
+app.use(function(req, res, next) {
+  next(createError(404));
+});
+app.use(function(err, req, res, next) {
+  res.locals.message = err.message;
+  res.locals.error = req.app.get("env") === "development" ? err : {};
+  
+  res.status(err.status || 500);
+  res.render("error");
+})
+
+
 
 app.listen(process.env.PORT);
 

@@ -12,7 +12,10 @@ const PlantSchema = new Schema(
     imageURL: String                       
     },
     {
-        timestamps: true
+        timestamps: {
+            createdAt: "created_at",
+            updatedAt: "updated_at"
+        }
     });
 module.exports = model('Plant', PlantSchema);
 
