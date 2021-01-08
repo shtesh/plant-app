@@ -22,6 +22,7 @@ const UserSchema = new Schema(
             trim: true,
         },
         pictureUrl: String,
+        favorites: Array,
     },
     {
         timestamps: {
