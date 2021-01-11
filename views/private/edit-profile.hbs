@@ -1,0 +1,19 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb arr-right">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit</li>
+  </ol>
+</nav>
+
+<form action="/edit-profile?_id={{user._id}}" method="POST">
+<h1>Edit your profile</h1>
+<label for="username">Username</label>
+<input name="username" type="text" value="{{user.username}} placeholder="Username" required autofocus>
+<label for="email">Email</label>
+<input name="email" type="email" value="{{user.email}}" placeholder="Email address" required autofocus>
+<label for="password">Old password</label>
+<input name="password" type="password" placeholder="Password" required>
+<label for="newPassword">New password</label>
+<input name="newPassword" type="password" placeholder="New password">
+ <button type="submit">Save changes</button>
+</form>

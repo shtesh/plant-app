@@ -1,0 +1,20 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+         <li class="breadcrumb-item"><a href="/">Home</a></li>
+         <li class="breadcrumb-item active" aria-current="page">Your favorites</li>
+    </ol>
+</nav>
+<div class="container" id="plants-list">
+     <h2 class="pt-2 pb-1">Your favorites</h2>
+</div>
+{{#if favorites}}
+{{#each favorites}}
+<div>
+    <a href="plants/details?plant_id={{this.plant_id}}"></a>
+    <img src="">
+</div>
+{{/each}}
+{{else}}
+<div>No favorites yet;(</div>
+{{/if}}
+</div>

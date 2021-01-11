@@ -1,0 +1,43 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="javascript:window.history.go(-1);">Results</a></li>
+ <li class="breadcrumb-item active" aria-current="page">Details</li>
+    </ol>
+</nav>
+
+<div class="container">
+ <div class="row">
+     <div>
+         <img style="width:340 px" src=""/>
+         {{#each plantDetails.imageURL}}
+         {{/each}}
+     </div>
+     <div>
+          {{#each plantDetails.name}}
+         {{/each}}
+     </div>
+     <div>
+        {{#each plantDetails.height}}
+         {{/each}}
+     </div>
+     <div>
+         {{#each plantDetails.light}}
+         {{/each}}
+     </div>
+     <div>
+         {{#each plantDetails.floweringTime}}
+         {{/each}}
+     </div>
+     <div>
+         {{#each plantDetails.native}}
+         {{/each}}
+     </div>
+     <div>
+         {{#each plantDetails.tags}}
+         {{/each}}
+     </div>
+ </div>
+</div>
+<script type="text/javascript" src="../javascript/dist/js/lightbox.min.js"></script> 
+<script type="text/javascript" src="../javascript/favorites.js"></script>
