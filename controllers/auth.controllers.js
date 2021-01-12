@@ -84,7 +84,7 @@ const login = async (req, res) => {
         if(!user) {
             return res.send("User does not exist. Please sign up.");
         }
-        const verifiedPassword = await bcrypt.compare(password, passwordHash);
+        const verifiedPassword = await bcrypt.compare(password, user.passwordHash);
         if(!verifiedPassword) {
             return res.send("Invalid credentials");
         }
