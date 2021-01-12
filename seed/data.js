@@ -27,7 +27,7 @@ const plants = [
         imageURL: 'https://bs.floristic.org/image/o/43fbf63d0ae4505d5fec2efd139b2d925f2a0d4e'  
     },
     {
-        name:Iberis 'Carnosa subsp. lagascana',                              
+        name:'Iberis Carnosa subsp. lagascana',                              
         height: '20',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
@@ -41,11 +41,11 @@ const plants = [
         light: 'Full daylight without direct sunlight (10 000 lux)',                               
         floweringTime: 'Spring',               
         native: ['Iran', 'Laos', 'Sulawesi', 'Albania', 'Bulgaria','Greece', 'Romania', 'Turkey-in-Europe', 'Yugoslavia', 'Czechoslovakia', 'Turkey', 'Lebanon-Syria', 'Italy', 'Sardegna', 'Sicilia', 'Corse, France', 'Great Britain', 'Kriti', 'Morocco', 'Portugal', 'Spain', 'Algeria', 'Afghanistan','Krym','Transcaucasus','Ukraine','Austria','Belgium','Germany', 'Hungary', 'Netherlands', 'North Caucasus','Switzerland'],
-        tags: White flower,                            
+        tags: ["White flower"],                            
         imageURL: 'https://bs.floristic.org/image/o/ca19ff5355c8f58e8522bc2390bf14cf77da93fb' 
     },
     {
-        name: Nepeta 'cataria',                              
+        name: 'Nepeta cataria',                              
         height: '100',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
@@ -58,7 +58,7 @@ const plants = [
         height:'120',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'autumn',               
-        native: ['Egypt','Ethiopia','Iran','Pakistan','Saudi Arabia','Sinai','China South-Central','China Southeast','East Himalaya','Nepal','West Himalaya','Albania','Bulgaria','Greece','Romania','Turkey-in-Europe','Yugoslavia','Czechoslovakia','Turkey','Iraq', Lebanon-Syria, Palestine, East Aegean Is., Italy, Sardegna, Sicilia, Azores, Baleares, Canary Is., Corse, France, Great Britain, Kriti, Madeira, Morocco, Portugal, Spain, Algeria, Afghanistan, Tibet, Japan, Nansei-shoto, Korea, China North-Central, Ogasawara-shoto, Cyprus, Kazakhstan, Krym, Libya, South European Russi, Tadzhikistan, Transcaucasus, Ukraine, Uzbekistan, Austria, Baltic States, Belarus, Belgium, Central European Rus, Denmark, East European Russia, Finland, Germany, Hungary, Ireland, Netherlands, North Caucasus, North European Russi,'Northwest European R','Norway','Poland','Sweden','Switzerland','Tunisia','West Siberia','Irkutsk','Kirgizstan','Krasnoyarsk','Yakutskiya','Qinghai','Xinjiang','Turkmenistan'],
+        native: ['Egypt','Ethiopia','Iran','Pakistan','Saudi Arabia','Sinai','China South-Central','China Southeast','East Himalaya','Nepal','West Himalaya','Albania','Bulgaria','Greece','Romania','Turkey-in-Europe','Yugoslavia','Czechoslovakia','Turkey','Iraq','Northwest European R','Norway','Poland','Sweden','Switzerland','Tunisia','West Siberia','Irkutsk','Kirgizstan','Krasnoyarsk','Yakutskiya','Qinghai','Xinjiang','Turkmenistan'],
         tags: ['flowers', 'foliage', 'fruits'],                            
         imageURL:  'https://bs.floristic.org/image/o/3074f8a623d725f9504a68e0822a2058c7c06415'
     },
@@ -236,7 +236,7 @@ const plants = [
         imageURL: "https://bs.floristic.org/image/o/d1c3c3f0c1192d34b8fe1dec4e0f315b54eed87c"
       },
       {
-        name: " Paeonia mascula",
+        name: "Paeonia mascula",
         height: "75",
         light: "Full daylight without direct sunlight ",
         floweringTime: "Summer",
@@ -244,7 +244,7 @@ const plants = [
         imageURL: "https://bs.floristic.org/image/o/e6b560e26ff2d2b8004d9e49088feebbf5bbcf90"
       },
       {
-        name: " Hyacinthus orientalis",
+        name: "Hyacinthus orientalis",
         height: "15",
         light: "Full daylight with some direct sunlight",
         floweringTime: "Spring",
@@ -299,5 +299,5 @@ const plants = [
         native: ["Turkey, Pakistan"],
         imageURL: "https://bs.floristic.org/image/o/b1370347c4cd41e2820f857c66310bf6c6454687"
       }
-  ]
+  ];
   module.exports = {plants};
