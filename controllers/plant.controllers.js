@@ -18,6 +18,7 @@ function plantWithDeleteOptions(plant) {
 const getPlants = async (req, res) => {
     try {
       const plants = await Plant.find().lean();
+      console.log(plants);
       const plantsWithOptions = plants.map(plantWithDeleteOptions);
       res.render("plants", { plants: plantsWithOptions });
     } catch (err) {

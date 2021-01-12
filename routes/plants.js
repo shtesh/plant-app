@@ -58,7 +58,7 @@ router.get('/details', (req, res, next) => {
 
     .catch(function (error) {
         next(error);
-      });
+});
     });
 
   module.exports = router;
