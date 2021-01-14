@@ -1,23 +1,8 @@
-<form action="{{action}}" method="{{method}}">
-    <input type="text" name="_method" value="{{restMethod}}" hidden>
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name">
-    <label for="height">Height</label>
-    <input type="text" name="height" id="height">
-    <label for="light">Light</label>
-    <input type="text" name="light" id="light">
-    <label for="floweringTime">Flowering time</label>
-    <input type="text" name="floweringTime" id="floweringTime">
-    <label for="native">Native</label>
-    <input type="text" name="native" id="native">
-    <label for="image">Image</label>
-    <input type="image" name="image" id="image">
-    <label for="tags">Tags</label>
-    <input type="text" name="tags" id="tags">
-    <button type="submit">{{btnText}}</button>
-    
-    </form>
-
-
-
-
+<div>
+    <h2>Plants</h2>
+    {{#each plants}}
+    <img src="{{this.imageURL}}"/>
+    <p>{{name}}</p>
+    <a href="/plants/{{_id}}">More information</a>
+    {{/each}}
+</div>

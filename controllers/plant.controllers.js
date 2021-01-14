@@ -20,7 +20,7 @@ const getPlants = async (req, res) => {
       const plants = await Plant.find().lean();
       console.log(plants);
       const plantsWithOptions = plants.map(plantWithDeleteOptions);
-      res.render("plants", { plants: plantsWithOptions });
+      res.render("plants", { plants: plantsWithOptions, btnText: "All Plants" });
     } catch (err) {
       console.error(err);
     }
