@@ -26,9 +26,16 @@ const getPlants = async (req, res) => {
     }
 };
 
+const addToFavoritesOption = (plantId) => ({
+  action: `/plants/favorites/${plantId}`,
+  btnText: "Add to Favorites",
+  method: "POST",
+  restMethod: "PATCH",
+});
+
 const editFormOptions = (plantId) => ({
     action: `/plants/${plantId}`,
-    btnText: "Edit plant",
+    btnText: "Edit Plant",
     method: "POST",
     restMethod: "PATCH",
 });
@@ -41,6 +48,7 @@ const getPlant = async (req, res) => {
       //rendering celebrity-detail view
       res.render("plantDetail", {
         ...editFormOptions(plantId),
+        ...addToFavoritesOption(plantId),
         ...plant,
       });
     } catch (err) {

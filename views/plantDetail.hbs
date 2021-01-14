@@ -1,5 +1,5 @@
 <div>
-    {{#each plants}}
+    <h2>Plant Detail</h2>
     <img src="{{imageURL}}"/>
     <p>{{name}}</p>
     <p>Height: {{height}}</p>
@@ -7,5 +7,6 @@
     <p>Flowering time: {{floweringTime}}</p>
     <p>Native: {{native}}</p>
     <p>Tags: {{tags}}</p>
-    {{/each}}
+    <a href="/plants/{{this._id}}/edit">Edit</a>
+    <button type="submit">{{btnText}}</button>
 </div>
