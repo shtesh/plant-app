@@ -90,7 +90,7 @@ const login = async (req, res) => {
         }
         req.session.currentUser = user._id;
         console.log(req.session);
-        return res.send("Successful login");
+        return res.redirect("/user");
     } catch(err) {
         console.error(err);
     }

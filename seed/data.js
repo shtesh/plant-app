@@ -40,7 +40,7 @@ const plants = [
         height: '1250',                        
         light: 'Full daylight without direct sunlight (10 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Iran', 'Laos', 'Sulawesi', 'Albania', 'Bulgaria','Greece', 'Romania', 'Turkey-in-Europe', 'Yugoslavia', 'Czechoslovakia', 'Turkey', 'Lebanon-Syria', 'Italy', 'Sardegna', 'Sicilia', 'Corse, France', 'Great Britain', 'Kriti', 'Morocco', 'Portugal', 'Spain', 'Algeria', 'Afghanistan','Krym','Transcaucasus','Ukraine','Austria','Belgium','Germany', 'Hungary', 'Netherlands', 'North Caucasus','Switzerland'],
+        native: ['Iran', 'Laos', 'Sulawesi', 'Albania', 'Bulgaria','Greece', 'Romania', 'Turkey', 'Italy', 'Sicilia', 'France', 'Great Britain', 'Kriti', 'Morocco', 'Portugal', 'Spain', 'Algeria', 'Afghanistan','Ukraine','Austria','Belgium','Germany', 'Hungary', 'Netherlands', 'North Caucasus','Switzerland'],
         tags: ["White flower"],                            
         imageURL: 'https://bs.floristic.org/image/o/ca19ff5355c8f58e8522bc2390bf14cf77da93fb' 
     },
@@ -49,7 +49,7 @@ const plants = [
         height: '100',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Iran', 'Pakistan', 'China South-Central', 'Nepal','West Himalaya','Albania','Bulgaria','Greece','Romania','Yugoslavia','Turkey','Iraq','Lebanon-Syria','Italy','Sicilia','Baleares','Corse, France','Portugal','Spain','Afghanistan','Korea','China North-Central','Kazakhstan','Krym','South European Russi','Tadzhikistan','Transcaucasus','Ukraine','Uzbekistan','Baltic States','Belarus','Central European Rus','East European Russia','North Caucasus','North European Russi','Northwest European R','Switzerland','West Siberia','Altay','Kirgizstan','Xinjiang','Turkmenistan'],
+        native: ['Iran', 'Pakistan', 'China', 'Nepal', 'Albania','Bulgaria','Greece','Romania', 'Turkey','Iraq','Italy','France','Portugal','Spain','Afghanistan','Korea','Kazakhstan','Tadzhikistan','Ukraine','Uzbekistan','Belarus','Switzerland','Kirgizstan','Turkmenistan'],
         tags:  ['Visible', 'Purple flowers', 'Green foliage'],                            
         imageURL: 'https://bs.floristic.org/image/o/220023d24ad316fdcfc29fdff3141feeca4a0c26' 
     },
@@ -58,7 +58,7 @@ const plants = [
         height:'120',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'autumn',               
-        native: ['Egypt','Ethiopia','Iran','Pakistan','Saudi Arabia','Sinai','China South-Central','China Southeast','East Himalaya','Nepal','West Himalaya','Albania','Bulgaria','Greece','Romania','Turkey-in-Europe','Yugoslavia','Czechoslovakia','Turkey','Iraq','Northwest European R','Norway','Poland','Sweden','Switzerland','Tunisia','West Siberia','Irkutsk','Kirgizstan','Krasnoyarsk','Yakutskiya','Qinghai','Xinjiang','Turkmenistan'],
+        native: ['Egypt','Ethiopia','Iran','Pakistan','Saudi Arabia','China','Nepal','Albania','Bulgaria','Greece','Romania','Turkey','Turkey','Iraq','Norway','Poland','Sweden','Switzerland','Tunisia','Kirgizstan','Krasnoyarsk','Yakutskiya','Turkmenistan'],
         tags: ['flowers', 'foliage', 'fruits'],                            
         imageURL:  'https://bs.floristic.org/image/o/3074f8a623d725f9504a68e0822a2058c7c06415'
     },
@@ -67,7 +67,7 @@ const plants = [
         height: '30',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Winter',               
-        native: ['Iran','Albania','Bulgaria','Greece','Romania','Turkey-in-Europe','Yugoslavia','Czechoslovakia','Turkey','Iraq','Lebanon-Syria','Italy','Sardegna','Sicilia','France','Portugal','Spain','Afghanistan','Kazakhstan','Krym','Tadzhikistan','Transcaucasus','Ukraine','Uzbekistan','Hungary','Kirgizstan','Turkmenistan'],
+        native: ['Iran','Albania','Bulgaria','Greece','Romania','Turkey','Iraq','Lebanon','Italy','France','Portugal','Spain','Afghanistan','Kazakhstan','Tadzhikistan','Ukraine','Uzbekistan','Hungary','Kirgizstan','Turkmenistan'],
         tags: ['foliage', 'flowers', 'fruits'],                            
         imageURL:  'https://bs.floristic.org/image/o/2bc796d9a50d2f64d75f327c3aa7be9090ec7c48'
     },
@@ -76,7 +76,7 @@ const plants = [
         height: '4572',                        
         light: 'Full daylight with some direct sunlight (50 000 lux)',                               
         floweringTime: 'Autumn',               
-        native: ['Arizona','New Mexico','Nevada','California','British Columbia','Colorado','Washington','Oregon', 'Alaska','Alberta','Idaho','Montana','Northwest Territorie','Wyoming','Yukon'],
+        native: ['USA', 'Canada'],
         tags: ['Persistent during winter', 'Medium','foliage','fruits'] ,                            
         imageURL: 'https://bs.floristic.org/image/o/eccce175c87ebada7dbfa8611049343d9a090c3c'
     },
@@ -85,7 +85,7 @@ const plants = [
         height: '40',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Bulgaria', 'Romania','Yugoslavia','Czechoslovakia','Turkey','Italy','France','Kazakhstan','South European Russi','Transcaucasus','Ukraine','Austria','Baltic States','Belarus', 'Central European Rus','East European Russia','Germany','Hungary','North Caucasus','North European Russi','Northwest European R','Poland','Switzerland','West Siberia','Altay','Krasnoyarsk','Mongolia'],
+        native: ['Bulgaria', 'Romania', 'Turkey','Italy','France','Kazakhstan','Ukraine','Austria', 'Belarus', 'Russia','Germany','Hungary','Poland','Switzerland','West Siberia','Altay','Krasnoyarsk','Mongolia'],
         tags: ['foliage','Blue flowers','fruits','small'],                            
         imageURL: 'https://bs.floristic.org/image/o/6f45044d11b80e84508547dd1d6b15ce83805e2d' 
     },

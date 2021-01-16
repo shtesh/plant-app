@@ -9,7 +9,7 @@ const PlantSchema = new Schema(
     floweringTime: String,               
     native: [String],
     tags: [String],                            
-    imageURL: String                       
+    imageURL: String                     
     },
     {
         timestamps: {

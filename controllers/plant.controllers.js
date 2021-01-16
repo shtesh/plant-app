@@ -1,8 +1,10 @@
 const Plant = require('../models/plant');
+const User = require('../models/user');
+
 
 const deleteFormOptions = (plantId) => ({
-    action: `/plants/${plantId}`,
-    btnText: "Delete plant",
+    action: `/user/profile/${plantId}`,
+    btnText: "DELETE",
     method: "POST",
     restMethod: "DELETE",
 });
@@ -27,15 +29,15 @@ const getPlants = async (req, res) => {
 };
 
 const addToFavoritesOption = (plantId) => ({
-  action: `/plants/favorites/${plantId}`,
+  action: `/plants/${plantId}/favorites`,
   btnText: "Add to Favorites",
   method: "POST",
   restMethod: "PATCH",
 });
 
 const editFormOptions = (plantId) => ({
-    action: `/plants/${plantId}`,
-    btnText: "Edit Plant",
+    action: `/profile/${plantId}`,
+    btnText: "EDIT",
     method: "POST",
     restMethod: "PATCH",
 });
@@ -46,7 +48,7 @@ const getPlant = async (req, res) => {
       // Call the Celebrity model's findById method to retrieve the details of a specific celebrity by its id.
       const plant = await Plant.findById(plantId).lean();
       //rendering celebrity-detail view
-      res.render("plantDetail", {
+      res.render("user/plantDetail", {
         ...editFormOptions(plantId),
         ...addToFavoritesOption(plantId),
         ...plant,
@@ -61,10 +63,14 @@ const createPlant = async (req, res) => {
       // Create an object with keys for name, occupation, and catchPhrase.
       // Values for those keys should come from the form (req.body is the object full of the values from the form)
       const { name, height, light, floweringTime, native, tags, imageURL } = req.body;
+      const image = req.file.path;
+      const creator = req.sessionUser._id;
       // Create an instance of the Celebrity model with the object you made in the previous step
-      const plant = await Plant.create({ name, height, light, floweringTime, native, tags, imageURL });
+      const plant = await Plant.create({ name, height, light, floweringTime, native, tags, imageURL});
+      const updatedUser = await User.findOneAndUpdate({_id:req.session.currentUser._id},{ $push : {"createdPlants" :  plant._id  }});
+      console.log("Update User",updatedUser);
       console.log("plant", plant);
-      res.redirect("/plants");
+      res.redirect("/profile");
     } catch (err) {
       console.error(err);
     }
@@ -74,6 +80,12 @@ const updatePlant = async (req, res) => {
     try {
       const { plantId } = req.params;
       const { name, height, light, floweringTime, native, tags, imageURL } = req.body;
+      let image;
+      if (req.file) {
+        image = req.file.path;
+      } else {
+        image = req.body.existingImage;
+      }
       const updatedPlant = await Plant.findByIdAndUpdate(plantId, {
         name,
         height,
@@ -81,9 +93,11 @@ const updatePlant = async (req, res) => {
         floweringTime,
         native,
         tags,
-        imageURL
-      });
-      res.redirect(`/plants/${plantId}`);
+        imageURL,
+        image
+      }, {new: true});
+      console.log(updatedPlant);
+      res.redirect(`/profile`);
     } catch (err) {
       console.log(err);
     }
@@ -95,10 +109,14 @@ const deletePlant = async (req, res) => {
       // Use the Celebrity model's findByIdAndRemove method to delete the celebrity by its id.
       const deletedPlant = await Plant.findByIdAndDelete(plantId);
       console.log("Deleted plant", deletedPlant);
-      res.redirect("/plants");
+      res.redirect("/profile");
     } catch (err) {
       console.log(err);
     }
+};
+
+const getFavorites = async (req, res) => {
+  res.render('user/favorites');
 };
 
 module.exports = {
@@ -107,5 +125,6 @@ module.exports = {
     createPlant,
     updatePlant,
     deletePlant,
+    getFavorites
 };
 

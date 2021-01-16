@@ -11,6 +11,7 @@ const createError = require("http-errors");
 
 const connectDb = require("./config/index");
 const plantsRoutes = require("./routes/plant.routes");
+const userRoutes = require("./routes/user.routes");
 
 const connectSession = require('./config/session.config');
 
@@ -43,13 +44,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/auth/signup", signUp);
 app.use("/auth/login", login);
 app.use("/auth/logout", logout);
-app.use("/main", main);
 app.use("/private", private);
 
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.get("/", (req, res) => res.render("index"));
 app.use("/plants", plantsRoutes);
+app.use("/user", userRoutes);
 app.use(function(req, res, next) {
   next(createError(404));
 });
