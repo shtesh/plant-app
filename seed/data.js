@@ -4,7 +4,7 @@ const plants = [
         height: '120',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['China Southeast','Hainan'],
+        native: ['China'],
         tags: ['Citrus'],                            
         imageURL: 'https://bs.floristic.org/image/o/227846bf751a419f50bd00114a282ab2b36785d5'
     },
@@ -40,7 +40,7 @@ const plants = [
         height: '1250',                        
         light: 'Full daylight without direct sunlight (10 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Iran', 'Laos', 'Sulawesi', 'Albania', 'Bulgaria','Greece', 'Romania', 'Turkey', 'Italy', 'Sicilia', 'France', 'Great Britain', 'Kriti', 'Morocco', 'Portugal', 'Spain', 'Algeria', 'Afghanistan','Ukraine','Austria','Belgium','Germany', 'Hungary', 'Netherlands', 'North Caucasus','Switzerland'],
+        native: ['Iran', 'Laos', 'Albania', 'Bulgaria','Greece', 'Romania', 'Turkey', 'Italy', 'France', 'Great Britain', 'Morocco', 'Portugal', 'Spain', 'Algeria', 'Afghanistan','Ukraine','Austria','Belgium','Germany', 'Hungary', 'Netherlands','Switzerland'],
         tags: ["White flower"],                            
         imageURL: 'https://bs.floristic.org/image/o/ca19ff5355c8f58e8522bc2390bf14cf77da93fb' 
     },
@@ -58,7 +58,7 @@ const plants = [
         height:'120',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'autumn',               
-        native: ['Egypt','Ethiopia','Iran','Pakistan','Saudi Arabia','China','Nepal','Albania','Bulgaria','Greece','Romania','Turkey','Turkey','Iraq','Norway','Poland','Sweden','Switzerland','Tunisia','Kirgizstan','Krasnoyarsk','Yakutskiya','Turkmenistan'],
+        native: ['Egypt','Ethiopia','Iran','Pakistan','Saudi Arabia','China','Nepal','Albania','Bulgaria','Greece','Romania','Turkey','Iraq','Norway','Poland','Sweden','Switzerland','Tunisia','Kirgizstan','Turkmenistan'],
         tags: ['flowers', 'foliage', 'fruits'],                            
         imageURL:  'https://bs.floristic.org/image/o/3074f8a623d725f9504a68e0822a2058c7c06415'
     },
@@ -85,7 +85,7 @@ const plants = [
         height: '40',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Bulgaria', 'Romania', 'Turkey','Italy','France','Kazakhstan','Ukraine','Austria', 'Belarus', 'Russia','Germany','Hungary','Poland','Switzerland','West Siberia','Altay','Krasnoyarsk','Mongolia'],
+        native: ['Bulgaria', 'Romania', 'Turkey','Italy','France','Kazakhstan','Ukraine','Austria', 'Belarus', 'Russia','Germany','Hungary','Poland','Switzerland','Mongolia'],
         tags: ['foliage','Blue flowers','fruits','small'],                            
         imageURL: 'https://bs.floristic.org/image/o/6f45044d11b80e84508547dd1d6b15ce83805e2d' 
     },
@@ -94,7 +94,7 @@ const plants = [
         height: '23',                        
         light: 'Cloudy day (5 000 lux)',                               
         floweringTime: 'Autumn',               
-        native: ['Austria','France','Italy','Switzerland','Yugoslavia'],
+        native: ['Austria','France','Italy','Switzerland'],
         tags:['foliage','Blue flowers','fruits','small'],                            
         imageURL: 'https://bs.floristic.org/image/o/2cdc3967e62b72ebeaaff9a1a01d5a263dcc4169'   
     },
@@ -112,7 +112,7 @@ const plants = [
         height: '3657',                        
         light: 'Full daylight with some direct sunlight (50 000 lux)',                               
         floweringTime: 'Winter',               
-        native: ['Mexico Northeast','Arizona','Mexico Northwest','New Mexico','Nevada','California','Colorado','Oregon','Idaho','Utah','Wyoming'],
+        native: ['Mexico','USA'],
         tags: ['Persistent during winter','Medium','foliage','fruits','Yellow flowers'],                            
         imageURL: 'https://bs.floristic.org/image/o/86a27975c82a298212f415657761ff83c6ebb4a8' 
     },
@@ -121,7 +121,7 @@ const plants = [
         height: '91',                        
         light: 'Full daylight with some direct sunlight (50 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Alabama','Kentucky','Tennessee','Indiana','Missouri','New York','Vermont','Minnesota'],
+        native: ['USA'],
         tags: ['Not persistent','Medium','foliage','fruits','flowers'],                            
         imageURL: 'https://bs.floristic.org/image/o/c6a915a717fe9bfd0f86c032b1274f72af95eaea' 
     },
@@ -130,7 +130,7 @@ const plants = [
         height: '3048',                        
         light: 'Full daylight with some direct sunlight (50 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Arizona','New Mexico','Colorado','Idaho','Montana','Utah','Wyoming'],
+        native: ['USA'],
         tags:['Persistent during winter','Medium','foliage','fruits','flowers'],                            
         imageURL: 'https://bs.floristic.org/image/o/e9526bd0c11dd0fd99b8071b899af4b3215c5a5f'  
     },
@@ -139,7 +139,7 @@ const plants = [
         height: '30',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['West Himalaya','Romania','Czechoslovakia','France','Kazakhstan','South European Russi','Transcaucasus','Ukraine','Uzbekistan','Austria','Baltic States','Belarus','Belgium','Central European Rus','East European Russia','Finland','Germany','Netherlands', 'North European Russi','Northwest European R','Norway','Poland','Sweden','West Siberia','Altay','Irkutsk','Krasnoyarsk','Mongolia','Xinjiang'],
+        native: ['Romania','France','Kazakhstan','Ukraine','Uzbekistan','Austria','Belarus','Belgium','Russia','Finland','Germany','Netherlands', 'Norway','Poland','Sweden','Mongolia'],
         tags: ['flower', 'foliage', 'humidity', 'fruits'],                            
         imageURL: 'https://bs.floristic.org/image/o/f758d52d8f128569f1c97a4fab084c280b98156f'
     },
@@ -148,7 +148,7 @@ const plants = [
         height: '91',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Florida','Alabama','Illinois','Kentucky','Tennessee','Texas','Georgia','South Carolina','Louisiana','Mississippi','Virginia','Oklahoma','Arkansas','Delaware','District of Columbia','Indiana','Iowa','Maryland','Michigan','Missouri','New Jersey','New York','North Carolina','Ohio','Ontario','Pennsylvania','Québec','Vermont','West Virginia','Connecticut','Maine','Masachusettes','New Hampshire, Rhode I','Minnesota','Wisconsin','Manitoba','New Brunswick','Nova Scotia','Labrador','Newfoundland','Prince Edward I','South Dakota'],
+        native: ['USA'],
         tags: ['flowers','not persistent','medium','foliage','fruits'],                            
         imageURL: 'https://bs.floristic.org/image/o/12d8ce453a73e99d69e35825148902cec599ef84' 
     },
@@ -157,7 +157,7 @@ const plants = [
         height: '123',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Iran', 'Albania','Greece','Turkey-in-Europe','Yugoslavia','Turkey','Iraq','Lebanon-Syria','Palestine','East Aegean Is','Italy','Sardegna','Sicilia','Corse','France','Kriti','Morocco','Portugal','Spain','Afghanistan','Cyprus','Kazakhstan','Tadzhikistan','Ukraine','Uzbekistan','Belgium','Germany','Switzerland'],
+        native: ['Iran', 'Albania','Greece','Turkey','Iraq','Lebanon','Syria','Palestine','Italy','France','Morocco','Portugal','Spain','Afghanistan','Cyprus','Kazakhstan','Tadzhikistan','Ukraine','Uzbekistan','Belgium','Germany','Switzerland'],
         tags: ['Purple flower', 'foliage', 'fruits'],                            
         imageURL: 'https://bs.floristic.org/image/o/2ceef1e285a1fef0b339ed2ce8a17de7b26f724f' 
     },
@@ -166,7 +166,7 @@ const plants = [
         height: '56',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['California','British Columbia','Washington','Oregon','Kamchatka','Alaska','Idaho','Montana','Aleutian Is'],
+        native: ['USA'],
         tags: ['candy-flower','foliage','flower','average','fruits'],                            
         imageURL: 'https://bs.floristic.org/image/o/573a75ab0f41607180bc48d084cdcef52cbc196f'
     },
@@ -175,7 +175,7 @@ const plants = [
         height: '65',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Nicaragua','Panamá','Bolivia','Brazil North','Brazil Northeast','Brazil Southeast','Brazil West-Central','Colombia','Ecuador','El Salvador','Honduras','Brazil South','Peru','Venezuela','Belize','Costa Rica','Guatemala','Guyana','Mexico Southeast','Paraguay','Argentina Northeast','Uruguay','Argentina Northwest'],
+        native: ['Nicaragua','Panama','Bolivia','Brazil','Colombia','Ecuador','El Salvador','Honduras','Peru','Venezuela','Belize','Costa Rica','Guatemala','Guyana','Mexico','Paraguay','Argentina','Uruguay','Argentina'],
         tags: ['White','Yellow flowers','foliage','fruits'],                            
         imageURL: 'https://bs.floristic.org/image/o/94a698a9fce276f4b9eaae9ff69d45e7b8920998'
     },
@@ -280,7 +280,7 @@ const plants = [
         height: "15",
         light: "Partial shade",
         floweringTime: "Spring",
-        native: ["Argentina, Uruguay,Mexico"],
+        native: ["Argentina", "Uruguay", "Mexico"],
         imageURL: "https://bs.floristic.org/image/o/dbfd45c7044758b2680e9333fc9251d12049f17f"
       },
       {
@@ -296,7 +296,7 @@ const plants = [
         height: "50",
         light: "Full daylight with some direct sunlight",
         floweringTime: "Spring",
-        native: ["Turkey, Pakistan"],
+        native: ["Turkey", "Pakistan"],
         imageURL: "https://bs.floristic.org/image/o/b1370347c4cd41e2820f857c66310bf6c6454687"
       }
   ];
