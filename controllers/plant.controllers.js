@@ -18,14 +18,23 @@ function plantWithDeleteOptions(plant) {
 }
 
 const getPlants = async (req, res) => {
-    try {
+  try{
+    const userId = req.session.currentUser;
+    //const { favoritesPlants } = await User.findById(userId).lean();
       const plants = await Plant.find().lean();
       console.log(plants);
       const plantsWithOptions = plants.map(plantWithDeleteOptions);
       res.render("plants", { plants: plantsWithOptions, btnText: "All Plants" });
-    } catch (err) {
-      console.error(err);
-    }
+        // const isFavorite = favoritesPlants.includes(plant._id);
+        // return {
+        //     ...plant,
+        //     isFavorite
+        // }
+    // })
+    //   res.render("plants",{plants});
+  } catch(err){
+      res.send(err);
+  }
 };
 
 
@@ -44,7 +53,6 @@ const getPlant = async (req, res) => {
       //rendering celebrity-detail view
       res.render("user/plantDetail", {
         ...editFormOptions(plantId),
-        ...addToFavoritesOption(plantId),
         ...plant,
       });
     } catch (err) {
@@ -109,8 +117,13 @@ const deletePlant = async (req, res) => {
     }
 };
 
-const getFavorites = async (req, res) => {
-  res.render('user/favorites');
+const getFavoritesPage = async (req, res) => {
+  try {
+    const userFav = await User.findById(req.session.currentUser._id).populate("favoritesPlants").lean();
+    res.render("user/favorites",{userFav});
+  } catch (err) {
+    res.send(err);
+  }
 };
 
 const updateFavorites = async (req, res) => {
@@ -118,7 +131,7 @@ const updateFavorites = async (req, res) => {
   const userId = req.session.currentUser;
   const updatedUser = await User.findbyIdAndUpdate(userId, {$push: {favorites: plantId }});
   res.redirect("/favorites");
-}
+};
 
 module.exports = {
     getPlants,
@@ -126,7 +139,7 @@ module.exports = {
     createPlant,
     updatePlant,
     deletePlant,
-    getFavorites,
+    getFavoritesPage,
     updateFavorites
 };
 

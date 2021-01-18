@@ -32,7 +32,7 @@ const main = async(req,res,next) => {
 };
 
 const private = async(req,res,next) => {
-    res.render("private");
+    res.render("user/profile", {userInSession: req.session.currentUser});
 };
 
 const signUp = async (req, res) => {
