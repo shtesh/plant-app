@@ -40,7 +40,7 @@ const plants = [
         height: '1250',                        
         light: 'Full daylight without direct sunlight (10 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Iran', 'Laos', 'Albania', 'Bulgaria','Greece', 'Romania', 'Turkey', 'Italy', 'France', 'Great Britain', 'Morocco', 'Portugal', 'Spain', 'Algeria', 'Afghanistan','Ukraine','Austria','Belgium','Germany', 'Hungary', 'Netherlands','Switzerland'],
+        native: ['Bulgaria','Greece', 'Romania', 'Turkey', 'Italy', 'France', 'Great Britain', 'Hungary', 'Netherlands','Switzerland'],
         tags: ["White flower"],                            
         imageURL: 'https://bs.floristic.org/image/o/ca19ff5355c8f58e8522bc2390bf14cf77da93fb' 
     },
@@ -49,7 +49,7 @@ const plants = [
         height: '100',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Iran', 'Pakistan', 'China', 'Nepal', 'Albania','Bulgaria','Greece','Romania', 'Turkey','Iraq','Italy','France','Portugal','Spain','Afghanistan','Korea','Kazakhstan','Tadzhikistan','Ukraine','Uzbekistan','Belarus','Switzerland','Kirgizstan','Turkmenistan'],
+        native: ['Iran', 'Pakistan', 'China', 'Nepal', 'Albania','Bulgaria'],
         tags:  ['Visible', 'Purple flowers', 'Green foliage'],                            
         imageURL: 'https://bs.floristic.org/image/o/220023d24ad316fdcfc29fdff3141feeca4a0c26' 
     },
@@ -58,7 +58,7 @@ const plants = [
         height:'120',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'autumn',               
-        native: ['Egypt','Ethiopia','Iran','Pakistan','Saudi Arabia','China','Nepal','Albania','Bulgaria','Greece','Romania','Turkey','Iraq','Norway','Poland','Sweden','Switzerland','Tunisia','Kirgizstan','Turkmenistan'],
+        native: ['Egypt','Norway','Poland','Sweden','Switzerland','Tunisia'],
         tags: ['flowers', 'foliage', 'fruits'],                            
         imageURL:  'https://bs.floristic.org/image/o/3074f8a623d725f9504a68e0822a2058c7c06415'
     },
@@ -67,7 +67,7 @@ const plants = [
         height: '30',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Winter',               
-        native: ['Iran','Albania','Bulgaria','Greece','Romania','Turkey','Iraq','Lebanon','Italy','France','Portugal','Spain','Afghanistan','Kazakhstan','Tadzhikistan','Ukraine','Uzbekistan','Hungary','Kirgizstan','Turkmenistan'],
+        native: ['Iran','Albania','Bulgaria','Greece','Romania','Turkey','Iraq','Lebanon','Italy'],
         tags: ['foliage', 'flowers', 'fruits'],                            
         imageURL:  'https://bs.floristic.org/image/o/2bc796d9a50d2f64d75f327c3aa7be9090ec7c48'
     },
@@ -85,7 +85,7 @@ const plants = [
         height: '40',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Bulgaria', 'Romania', 'Turkey','Italy','France','Kazakhstan','Ukraine','Austria', 'Belarus', 'Russia','Germany','Hungary','Poland','Switzerland','Mongolia'],
+        native: ['Bulgaria', 'Romania', 'Turkey','Italy','France','Poland','Switzerland','Mongolia'],
         tags: ['foliage','Blue flowers','fruits','small'],                            
         imageURL: 'https://bs.floristic.org/image/o/6f45044d11b80e84508547dd1d6b15ce83805e2d' 
     },
@@ -139,7 +139,7 @@ const plants = [
         height: '30',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Romania','France','Kazakhstan','Ukraine','Uzbekistan','Austria','Belarus','Belgium','Russia','Finland','Germany','Netherlands', 'Norway','Poland','Sweden','Mongolia'],
+        native: ['Romania','France','Finland','Germany','Netherlands', 'Norway','Poland','Sweden','Mongolia'],
         tags: ['flower', 'foliage', 'humidity', 'fruits'],                            
         imageURL: 'https://bs.floristic.org/image/o/f758d52d8f128569f1c97a4fab084c280b98156f'
     },
@@ -157,7 +157,7 @@ const plants = [
         height: '123',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Iran', 'Albania','Greece','Turkey','Iraq','Lebanon','Syria','Palestine','Italy','France','Morocco','Portugal','Spain','Afghanistan','Cyprus','Kazakhstan','Tadzhikistan','Ukraine','Uzbekistan','Belgium','Germany','Switzerland'],
+        native: ['Iran', 'Albania','Greece','Germany','Switzerland'],
         tags: ['Purple flower', 'foliage', 'fruits'],                            
         imageURL: 'https://bs.floristic.org/image/o/2ceef1e285a1fef0b339ed2ce8a17de7b26f724f' 
     },
@@ -175,7 +175,7 @@ const plants = [
         height: '65',                        
         light: 'Full daylight with a lot of direct sunlight (75 000 lux)',                               
         floweringTime: 'Spring',               
-        native: ['Nicaragua','Panama','Bolivia','Brazil','Colombia','Ecuador','El Salvador','Honduras','Peru','Venezuela','Belize','Costa Rica','Guatemala','Guyana','Mexico','Paraguay','Argentina','Uruguay','Argentina'],
+        native: ['Nicaragua','Panama','Bolivia','Brazil','Colombia','Ecuador','El Salvador','Honduras'],
         tags: ['White','Yellow flowers','foliage','fruits'],                            
         imageURL: 'https://bs.floristic.org/image/o/94a698a9fce276f4b9eaae9ff69d45e7b8920998'
     },
@@ -185,7 +185,7 @@ const plants = [
         height: "4166",
         imageURL: "https://bs.floristic.org/image/o/dbba763d09342f393f024e8edfcd73cd2f08859f",
         light: "Full daylight",
-        native: "USA"
+        native: ["USA"]
       },
       {
       name: "Lavandula latifolia",
