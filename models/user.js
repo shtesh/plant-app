@@ -1,4 +1,4 @@
-const {Schema, model} = require('mongoose');
+const {Schema, model, Mongoose} = require('mongoose');
 const emailRegex = /^\S+@\S+\.\S+$/;
 
 const UserSchema = new Schema(
@@ -22,7 +22,12 @@ const UserSchema = new Schema(
             trim: true,
         },
         pictureUrl: String,
-        favorites: Array,
+        favorites: [
+        { 
+            type: Schema.Types.ObjectId,
+            ref: "Plant"
+        }
+    ],
     },
     {
         timestamps: {

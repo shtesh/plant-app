@@ -4,5 +4,8 @@
     <img src="{{this.imageURL}}"/>
     <p>{{name}}</p>
     <a href="/plants/{{_id}}">More information</a>
+    <form action="/user/favorites/{{_id}} method="POST">
+    <button type="submit">Add to Favorites</button>
+    </form>
     {{/each}}
 </div>

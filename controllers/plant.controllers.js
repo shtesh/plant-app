@@ -28,12 +28,6 @@ const getPlants = async (req, res) => {
     }
 };
 
-const addToFavoritesOption = (plantId) => ({
-  action: `/plants/${plantId}/favorites`,
-  btnText: "Add to Favorites",
-  method: "POST",
-  restMethod: "PATCH",
-});
 
 const editFormOptions = (plantId) => ({
     action: `/profile/${plantId}`,
@@ -119,12 +113,20 @@ const getFavorites = async (req, res) => {
   res.render('user/favorites');
 };
 
+const updateFavorites = async (req, res) => {
+  const {plantId} = req.params;
+  const userId = req.session.currentUser;
+  const updatedUser = await User.findbyIdAndUpdate(userId, {$push: {favorites: plantId }});
+  res.redirect("/favorites");
+}
+
 module.exports = {
     getPlants,
     getPlant,
     createPlant,
     updatePlant,
     deletePlant,
-    getFavorites
+    getFavorites,
+    updateFavorites
 };
 

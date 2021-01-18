@@ -7,5 +7,6 @@ const router = Router();
 
 router
   .get("/", getUser);
+  
 
 module.exports = router;

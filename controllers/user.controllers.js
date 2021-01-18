@@ -12,10 +12,18 @@ const getUser = async (req,res) => {
   }
 };
 
+const updateFavorites = async (req, res) => {
+  const {plantId} = req.params;
+  const userId = req.session.currentUser;
+  const updatedUser = await User.findbyIdAndUpdate(userId, {$push: {favorites: plantId }});
+  res.redirect("/favorites");
+}
+
 
 
 module.exports = {
-  getUser
+  getUser,
+  updateFavorites
 };
 
 

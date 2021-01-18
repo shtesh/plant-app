@@ -7,6 +7,7 @@
     <p>Flowering time: {{floweringTime}}</p>
     <p>Native: {{native}}</p>
     <p>Tags: {{tags}}</p>
-    <a href="/plants/{{this._id}}/edit">Edit</a>
-    <a href="/plants/{{this._id}}/favorites">{{btnText}}</a>
+    <form action="/user/favorites/{{_id}} method="POST">
+    <button type="submit">Add to Favorites</button>
+    </form>
 </div>
