@@ -60,7 +60,7 @@ const signUp = async (req, res) => {
         });
         console.log("user", user);
         req.session.currentUser = user;
-        return res.send('Successful signup');
+        res.redirect("/user/profile");
     } catch(err) {
         if(isMongooseValidationError(err)){
             return res.send('Validation error: ' + err.message);
@@ -90,7 +90,7 @@ const login = async (req, res) => {
         }
         req.session.currentUser = user._id;
         console.log(req.session);
-        return res.redirect("/user");
+        return res.redirect("/user/profile");
     } catch(err) {
         console.error(err);
     }

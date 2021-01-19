@@ -1,13 +1,11 @@
 <div>
     <h1>Favorites</h1>
 </div>
-{{#if userFav.favoritesPlants}}
-{{#each userFav.favoritesPlants}}
+{{#if userFav.favorites}}
+{{#each userFav.favorites}}
 <h3>{{name}}</h3>
 <img alt="" src="{{imageURL}}">
 {{/each}}
 {{else}}
-<div>No favorites yet;(</div>
-{{/else}}
+<div>No favorites yet.</div>
 {{/if}}
-</div>

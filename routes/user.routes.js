@@ -1,33 +1,24 @@
-const express = require('express');
 const { Router } = require("express");
 const {
     getUser,
-    getPlant,
-    getPlants,
-    createPlant,
-    updatePlant,
-    deletePlant,
     updateFavorites,
     getFavoritesPage
 } = require("../controllers/user.controllers");
 
 function isLoggedIn(req, res, next) {
-  if(req.session.currentUser) next();
-  else res.redirect('/login');
+  console.log("Session", req.session);
+  if(req.session.currentUser) {
+    return next();
+  }
+    res.redirect('/auth/login');
 }
-
 
 const router = Router();
 
 router
-  .get("/user/profile", isLoggedIn, getUser)
-  .get("/user/profile/:plantId", isLoggedIn, getPlant)
-  .get("/user/profile/:plantId", isLoggedIn, getPlants)
-  .get("/plantDetail/:plantId", isLoggedIn, getPlant)
-  .get("/favorites", isLoggedIn, getFavoritesPage)
-  .post("/favorites/:plantId", isLoggedIn, updateFavorites)
-  .post("/profile/:plantId/delete", isLoggedIn, deletePlant);
-
+  .get("/profile", getUser)
+  .get("/favorites", getFavoritesPage)
+  .post("/favorites/:plantId", updateFavorites);
 
 
 module.exports = router;

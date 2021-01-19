@@ -19,19 +19,10 @@ function plantWithDeleteOptions(plant) {
 
 const getPlants = async (req, res) => {
   try{
-    const userId = req.session.currentUser;
-    //const { favoritesPlants } = await User.findById(userId).lean();
-      const plants = await Plant.find().lean();
+   const plants = await Plant.find().lean();
       console.log(plants);
       const plantsWithOptions = plants.map(plantWithDeleteOptions);
       res.render("plants", { plants: plantsWithOptions, btnText: "All Plants" });
-        // const isFavorite = favoritesPlants.includes(plant._id);
-        // return {
-        //     ...plant,
-        //     isFavorite
-        // }
-    // })
-    //   res.render("plants",{plants});
   } catch(err){
       res.send(err);
   }
@@ -51,7 +42,7 @@ const getPlant = async (req, res) => {
       // Call the Celebrity model's findById method to retrieve the details of a specific celebrity by its id.
       const plant = await Plant.findById(plantId).lean();
       //rendering celebrity-detail view
-      res.render("user/plantDetail", {
+      res.render("plantDetail", {
         ...editFormOptions(plantId),
         ...plant,
       });
