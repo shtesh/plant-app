@@ -5,7 +5,10 @@
     <p>Height: {{height}}</p>
     <p>Light: {{light}}</p>
     <p>Flowering time: {{floweringTime}}</p>
-    <p>Native: {{native}}</p>
+   <ul> Native: 
+    {{#each native}}
+     <li>{{this}}</li>  
+        {{/each}}</ul>
     <p>Tags: {{tags}}</p>
     <form action="/user/favorites/{{_id}}" method="POST">
     <button type="submit">Add to Favorites</button>
