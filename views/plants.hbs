@@ -1,8 +1,16 @@
 <div>
     <h2>Plants</h2>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+    <div class="container">
     {{#each plants}}
-    <img src="{{this.imageURL}}"/>
+    <img src="{{this.imageURL}}" class="w3-round"/>
     <p>{{name}}</p>
     <a href="/plants/{{_id}}">More information</a>
     {{/each}}
+    </div>
+
 </div>

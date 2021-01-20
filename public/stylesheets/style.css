@@ -1,0 +1,25 @@
+
+
+  body {
+    background-color:#5EC296;
+  }
+
+  h1{
+    color:#2F4858; 
+  }
+
+  .w3-round {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: space-between;
+  align-self: center;
+}
