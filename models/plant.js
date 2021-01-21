@@ -9,7 +9,7 @@ const PlantSchema = new Schema(
     floweringTime: String,               
     native: [String],
     tags: [String],                            
-    imageURL: String                     
+    imageURL:{type:String, default:"https://bs.floristic.org/image/o/6f45044d11b80e84508547dd1d6b15ce83805e2d"}                   
     },
     {
         timestamps: {

@@ -1,5 +1,4 @@
-<form action="{{action}}" method="{{method}}">
-    <input type="text" name="_method" value="{{restMethod}}" hidden>
+<form action="/plants/{{_id}}" method="POST">
     <label for="name">Name</label>
     <input type="text" name="name" id="name">
     <label for="height">Height</label>
@@ -14,8 +13,7 @@
     <input type="image" name="image" id="image">
     <label for="tags">Tags</label>
     <input type="text" name="tags" id="tags">
-    <button type="submit">{{btnText}}</button>
-    
+    <button type="submit">Update</button>
     </form>
     
 

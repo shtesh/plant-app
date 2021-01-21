@@ -5,6 +5,9 @@
 {{#each userFav.favorites}}
 <h3>{{name}}</h3>
 <img alt="" src="{{imageURL}}">
+<form action="/plants/{{_id}}" method="PATCH">
+<button type="submit">Edit</button>
+</form>
 {{/each}}
 {{else}}
 <div>No favorites yet.</div>

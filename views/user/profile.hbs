@@ -2,24 +2,13 @@
 
 {{#if user}}
  <h2>Hi, {{user.username}}!</h2>
- <p>Welcome to your private space!</p>
+ <p>Welcome to your private space.</p>
+
+ <p>Create your plant below:</p>
 
 {{>newPlant}}
 
-<div>
-{{#each user.createdPlants}}
-Name: {{name}}
-<img alt="" src="{{imageURL}}"
-Height: {{height}}
-Light: {{light}}
-Flowering time: {{floweringTime}}
-Native: {{native}}
-Tags: {{tags}}
-Creator: {{user.username}}
-<a href="/plant-detail/{{_id}}">Edit</a>
-{{> deletePlant}}
-{{/each}}
-</div>
+
 <a href = "/user/favorites">Favorites</a>
  {{else}}
  <p>{{errorMessage}}</p>

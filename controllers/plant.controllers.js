@@ -58,15 +58,11 @@ const createPlant = async (req, res) => {
     try {
       // Create an object with keys for name, occupation, and catchPhrase.
       // Values for those keys should come from the form (req.body is the object full of the values from the form)
-      const { name, height, light, floweringTime, native, tags, imageURL } = req.body;
-      const image = req.file.path;
-      const creator = req.sessionUser._id;
+      console.log("Created plant", req.body);
       // Create an instance of the Celebrity model with the object you made in the previous step
-      const plant = await Plant.create({ name, height, light, floweringTime, native, tags, imageURL});
-      const updatedUser = await User.findOneAndUpdate({_id:req.session.currentUser._id},{ $push : {"createdPlants" :  plant._id  }});
-      console.log("Update User",updatedUser);
-      console.log("plant", plant);
-      res.redirect("/profile");
+      const createdPlant = await Plant.create(req.body);
+      console.log("plant", createdPlant);
+      res.redirect("/user/profile");
     } catch (err) {
       console.error(err);
     }
@@ -75,25 +71,18 @@ const createPlant = async (req, res) => {
 const updatePlant = async (req, res) => {
     try {
       const { plantId } = req.params;
-      const { name, height, light, floweringTime, native, tags, imageURL } = req.body;
-      let image;
-      if (req.file) {
-        image = req.file.path;
-      } else {
-        image = req.body.existingImage;
-      }
+      const { name, height, light, floweringTime, native, tags } = req.body;
+    
       const updatedPlant = await Plant.findByIdAndUpdate(plantId, {
         name,
         height,
         light,
         floweringTime,
         native,
-        tags,
-        imageURL,
-        image
-      }, {new: true});
-      console.log(updatedPlant);
-      res.redirect(`/profile`);
+        tags
+      });
+      console.log("Updated plant",updatedPlant);
+      res.redirect(`/editPlant`);
     } catch (err) {
       console.log(err);
     }
