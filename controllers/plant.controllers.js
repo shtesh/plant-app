@@ -19,14 +19,17 @@ function plantWithDeleteOptions(plant) {
 
 const getPlants = async (req, res) => {
   try{
+    const {plantName =''} = req.query
    const plants = await Plant.find().lean();
       console.log(plants);
-      const plantsWithOptions = plants.map(plantWithDeleteOptions);
+      const plantsWithOptions = plants.filter(plant=> plant.name.toLowerCase().includes(plantName.toLowerCase())).map(plantWithDeleteOptions);
       res.render("plants", { plants: plantsWithOptions, btnText: "All Plants" });
+
   } catch(err){
       res.send(err);
   }
 };
+
 
 
 const editFormOptions = (plantId) => ({
