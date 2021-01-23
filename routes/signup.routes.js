@@ -4,6 +4,6 @@ const parser = require('./../config/cloudinary.config');
 
 const {showFormSignUp, signUp} = require("../controllers/auth.controllers");
 
-router.get("/", showFormSignUp).post("/", parser.single('profilePicture') ,signUp);
+router.get("/", showFormSignUp).post("/", parser.single('profilePicture'), signUp);
 
 module.exports = router; 
