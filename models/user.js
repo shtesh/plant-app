@@ -21,7 +21,7 @@ const UserSchema = new Schema(
             required: true,
             trim: true,
         },
-        pictureUrl: String,
+        profilePicture: { type: String, required: true },
         favorites: [
         { 
             type: Schema.Types.ObjectId,
