@@ -24,10 +24,10 @@ const getFavoritesPage = async (req, res) => {
 
 const updateFavorites = async (req, res) => {
   const {plantId} = req.params;
-console.log('plantid', plantId)
+console.log('plantid', plantId);
   const userId = req.session.currentUser;
   const user = await User.findById(userId).populate('favorites');
-  console.log('user', user)
+  console.log('user', user);
   const isFavorite = user.favorites.find(plant => String(plant._id) === String(plantId));
  console.log('is favorite', isFavorite);
 if(isFavorite) {
@@ -40,10 +40,24 @@ const updateUser = await User.findByIdAndUpdate(userId, {$push: {favorites: plan
  return res.redirect('/user/favorites');
 };
 
+const deleteFavorites = async (req, res) => {
+  const {plantId} = req.params;
+  console.log('plantid', plantId);
+  const userId = req.session.currentUser;
+  const user = await User.findById(userId).populate('favorites');
+  console.log('user', user);
+  const isFavorite = user.favorites.find(plant => String(plant._id) === String(plantId));
+  console.log('is favorite', isFavorite);
+  if(isFavorite) {
+    const updateUser = await User.findByIdAndDelete(userId, {$push: {favorites: plantId}});
+  } 
+};
+
 module.exports = {
   getUser,
   updateFavorites,
-  getFavoritesPage
+  getFavoritesPage,
+  deleteFavorites
 };
 
 
