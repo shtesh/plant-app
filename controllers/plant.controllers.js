@@ -1,25 +1,24 @@
 const Plant = require('../models/plant');
 const User = require('../models/user');
 
-
 const deleteFormOptions = (plantId) => ({
-    action: `/user/profile/${plantId}`,
-    btnText: "DELETE",
-    method: "POST",
-    restMethod: "DELETE",
-});
+  action: `/user/favorites/${plantId}`,
+  btnText: "DELETE",
+  method: "POST",
+  restMethod: "DELETE",
+  })
 
 function plantWithDeleteOptions(plant) {
-    const deleteOptions = deleteFormOptions(plant._id);
-    return {
-      ...plant,
-      ...deleteOptions,
-    };
+const deleteOptions = deleteFormOptions(plant._id);
+return {
+...plant,
+...deleteOptions,
+};
 }
 
 const getPlants = async (req, res) => {
   try{
-    const {plantName =''} = req.query
+    const {plantName =''} = req.query;
    const plants = await Plant.find().lean();
       console.log(plants);
       const plantsWithOptions = plants.filter(plant=> plant.name.toLowerCase().includes(plantName.toLowerCase())).map(plantWithDeleteOptions);
@@ -33,10 +32,10 @@ const getPlants = async (req, res) => {
 
 
 const editFormOptions = (plantId) => ({
-    action: `/profile/${plantId}`,
-    btnText: "EDIT",
-    method: "POST",
-    restMethod: "PATCH",
+action: `/profile/${plantId}`,
+btnText: "EDIT",
+method: "POST",
+restMethod: "PATCH",
 });
 
 const getPlant = async (req, res) => {
@@ -94,7 +93,7 @@ const deletePlant = async (req, res) => {
       // Use the Celebrity model's findByIdAndRemove method to delete the celebrity by its id.
       const deletedPlant = await Plant.findByIdAndDelete(plantId);
       console.log("Deleted plant", deletedPlant);
-      res.redirect("/profile");
+      res.redirect("/user/favorites");
     } catch (err) {
       console.log(err);
     }

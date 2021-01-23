@@ -24,10 +24,20 @@ const getFavoritesPage = async (req, res) => {
 
 const updateFavorites = async (req, res) => {
   const {plantId} = req.params;
+console.log('plantid', plantId)
   const userId = req.session.currentUser;
-  const updatedUser = await User.findByIdAndUpdate(userId, {$push: {favorites: plantId }},{new: true});
-  console.log(updatedUser);
-  res.redirect("/user/favorites");
+  const user = await User.findById(userId).populate('favorites');
+  console.log('user', user)
+  const isFavorite = user.favorites.find(plant => String(plant._id) === String(plantId));
+ console.log('is favorite', isFavorite);
+if(isFavorite) {
+  const updateUser = await User.findByIdAndUpdate(userId, {$pull: {favorites: plantId} }, {new: true});
+  console.log('update user 1', updateUser);
+ return res.redirect('/user/favorites');
+}
+const updateUser = await User.findByIdAndUpdate(userId, {$push: {favorites: plantId} }, {new: true});
+  console.log('update user 2', updateUser);
+ return res.redirect('/user/favorites');
 };
 
 module.exports = {
