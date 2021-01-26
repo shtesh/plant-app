@@ -1,16 +1,16 @@
 <h3>Your profile</h3>
 
 {{#if user}}
- <h2>Hi, {{user.username}}!</h2>
- <p>Welcome to your private space.</p>
- Your profile picture: <img src="{{user.profilePicture}}" alt="profilePicture">
+<h2>Hi, {{user.username}}!</h2>
+<p>Welcome to your private space.</p>
+Your profile picture: <img src="{{user.profilePicture}}" alt="profilePicture">
 
- <p>Create your plant below:</p>
+<p>Create your plant below:</p>
 
-{{>newPlant}}
+{{> newPlant}}
 
 
-<a href = "/user/favorites">Favorites</a>
- {{else}}
- <p>{{errorMessage}}</p>
-{{/if}} 
+<a href="/user/favorites">Favorites</a>
+{{else}}
+<p>{{errorMessage}}</p>
+{{/if}}
