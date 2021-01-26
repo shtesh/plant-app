@@ -12,6 +12,6 @@ router
   .get("/:plantId", getPlant)
   .post("/", createPlant)
   .post("/:plantId/edit", updatePlant)
-  .delete("/:plantId", deletePlant);
+  .post("/:plantId/delete", deletePlant);
 
 module.exports = router;

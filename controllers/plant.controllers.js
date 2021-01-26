@@ -93,10 +93,9 @@ const updatePlant = async (req, res) => {
 const deletePlant = async (req, res) => {
   try {
     const { plantId } = req.params;
-    // Use the Celebrity model's findByIdAndRemove method to delete the celebrity by its id.
     const deletedPlant = await Plant.findByIdAndDelete(plantId);
     console.log("Deleted plant", deletedPlant);
-    res.redirect("/user/favorites");
+    res.redirect("/plants");
   } catch (err) {
     console.log(err);
   }
