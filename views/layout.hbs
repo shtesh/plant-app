@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Plant App</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
+
 <body>
-  <nav class = "navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <img src="/images/logo.jpg" alt="logo" width="40" height="40">
-      <a class= "navbar-brand" href="/plants"> Plants</a>
-    <ul class= "navbar-nav ml-auto">
-         <li class = "nav-item">
-            <a class = "nav-link" href ="/auth/signup"> Sign Up </a>
-        </li>
-        <li class = "nav-item">
-            <a class = "nav-link" href ="/auth/login"> Log In </a>
-        </li>
-        <li class = "nav-item">
-            <a class = "nav-link" href ="/auth/logout"> Log Out </a>
-        </li>
-    </ul>
-</nav>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <img src="/images/logo.jpg" alt="logo" width="40" height="40">
+        <a class="navbar-brand" href="/plants"> Plants</a>
+        <ul class="navbar-nav ml-auto">
+          {{#if userId}}
+          <li class="nav-item">
+            <a class="nav-link" href="/user/profile"> Profile </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/auth/logout"> Log Out </a>
+          </li>
+          {{else}}
+          <li class="nav-item">
+            <a class="nav-link" href="/auth/signup"> Sign Up </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/auth/login"> Log In </a>
+          </li>
+          {{/if}}
+
+        </ul>
+  </nav>
   {{{body}}}
-  </body>
+</body>
+
 </html>
-<nav class = "navbar-expand-lg navbar-light bg-light">
-    <ul class= "navbar-nav">
-        <li class = "nav-item">
-            <a class = "nav-link" href =""> Contact </a>
-        </li>
-         <li class = "nav-item">
-            <a class = "nav-link" href =""> FAQ </a>
-        </li>
-        <li class = "nav-item">
-            <a class = "nav-link" href =""> Legal </a>
-        </li>
-    </ul>
+<nav class="navbar-expand-lg navbar-light bg-light">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href=""> Contact </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href=""> FAQ </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href=""> Legal </a>
+    </li>
+  </ul>
 </nav>

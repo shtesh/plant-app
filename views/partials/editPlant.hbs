@@ -1,0 +1,21 @@
+<form action="/plants/{{_id}}/edit" method="POST">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value='{{name}}'>
+    <br>
+    <label for="height">Height</label>
+    <input type="number" name="height" id="height" value='{{height}}'>
+    <br>
+    <label for="light">Light</label>
+    <input type="text" name="light" id="light" value='{{light}}'>
+    <br>
+    <label for="floweringTime">Flowering time</label>
+    <input type="text" name="floweringTime" id="floweringTime" value='{{floweringTime}}'>
+    <br>
+    <label for="native">Native</label>
+    <input type="text" name="native" id="native" value='{{native}}'>
+    <br>
+    <label for="tag">Tags</label>
+    <input type="text" name="tags" id="tag" value='{{tags}}'>
+    <br>
+    <button type="submit">Edit</button>
+</form>
