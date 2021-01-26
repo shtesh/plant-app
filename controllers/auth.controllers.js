@@ -53,13 +53,10 @@ const signUp = async (req, res) => {
         const saltRounds = 10;
         const salt = await bcrypt.genSalt(saltRounds);
         const hashedPassword = await bcrypt.hash(password, salt);
-        const image_url = req.file.path;
-        console.log(req.file);
         const user = await User.create({
             email,
             passwordHash: hashedPassword,
             username,
-            profilePicture: image_url
         });
         console.log("user", user);
         req.session.currentUser = user;
@@ -92,7 +89,6 @@ const login = async (req, res) => {
             return res.send("Invalid credentials");
         }
         req.session.currentUser = user._id;
-        console.log(req.session);
         return res.redirect("/user/profile");
     } catch(err) {
         console.error(err);
