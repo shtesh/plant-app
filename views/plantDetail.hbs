@@ -1,16 +1,16 @@
 <div>
     <h2>Plant Detail</h2>
     <img src="{{imageURL}}" />
-    <p>{{name}}</p>
-    <p>Height: {{height}}</p>
-    <p>Light: {{light}}</p>
-    <p>Flowering time: {{floweringTime}}</p>
-    <ul> Native:
+    <p><i class="bi bi-bookmark">{{name}}</i></p>
+    <p><i class="bi bi-graph-up">Height: {{height}}</i></p>
+    <p><i class="bi bi-brightness-high">Light: {{light}}</i></p>
+    <p><i class="bi bi-flower1">Flowering time: {{floweringTime}}</i></p>
+    <ul> <i class="bi bi-geo-alt">Native:</i>
         {{#each native}}
         <li>{{this}}</li>
         {{/each}}
     </ul>
-    <p>Tags: {{tags}}</p>
+    <p><i class="bi bi-hash">Tags: {{tags}}</i></p>
     {{#if userId}}
     <form action="/user/favorites/{{_id}}" method="POST">
         <button type="submit">
