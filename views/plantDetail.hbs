@@ -15,9 +15,9 @@
     <form action="/user/favorites/{{_id}}" method="POST">
         <button type="submit">
             {{#if isFavoritePlant}}
-            Remove plant from favorites
+            <i class="bi bi-trash">Remove from Favorites</i>
             {{else}}
-            Add plant to favorites
+            <i class="bi bi-heart">Add to Favorites</i>
             {{/if}}
         </button>
     </form>
