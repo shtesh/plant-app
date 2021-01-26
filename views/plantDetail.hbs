@@ -1,19 +1,25 @@
 <div>
     <h2>Plant Detail</h2>
-    <img src="{{imageURL}}"/>
+    <img src="{{imageURL}}" />
     <p>{{name}}</p>
     <p>Height: {{height}}</p>
     <p>Light: {{light}}</p>
     <p>Flowering time: {{floweringTime}}</p>
-   <ul> Native: 
-    {{#each native}}
-     <li>{{this}}</li>  
-        {{/each}}</ul>
+    <ul> Native:
+        {{#each native}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
     <p>Tags: {{tags}}</p>
+    {{#if userId}}
     <form action="/user/favorites/{{_id}}" method="POST">
-    <button type="submit">Add to Favorites</button>
+        <button type="submit">
+            {{#if isFavoritePlant}}
+            Remove plant from favorites
+            {{else}}
+            Add plant to favorites
+            {{/if}}
+        </button>
     </form>
-    <form action="/user/favorites/{{_id}}" method="POST">
-    <button type="submit">Remove from Favorites</button>
-    </form>
+    {{/if}}
 </div>

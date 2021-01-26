@@ -21,7 +21,7 @@ const UserSchema = new Schema(
             required: true,
             trim: true,
         },
-        profilePicture: { type: String, required: true },
+        profilePicture: { type: String, default: 'https://github.com/kentcdodds/jest-cypress-react-babel-webpack.git' },
         favorites: [
         { 
             type: Schema.Types.ObjectId,
