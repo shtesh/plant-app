@@ -80,12 +80,12 @@ Trello
 Link to your trello board or picture of your physical board
 https://trello.com/b/0gOPGnvX/m2-project
 
-Git
-The url to your repository and to your deployed project
+Git 
+The url to your repository and to your deployed project https://github.com/shtesh/plant-app
 
-Repository Link
+Repository Link https://github.com/shtesh/plant-app
 
-Deploy Link
+Deploy Link https://plantastique.herokuapp.com
 
 Slides
 The url to your presentation slides
