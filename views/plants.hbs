@@ -5,12 +5,15 @@
         <button class="btn btn-outline-success" type="submit"><i class="bi bi-search">Search</i></button>
       </form>
 
-    <div class="container">
-    {{#each plants}}
+    <div class= "raw">
+        <div class="col-lg-3 col-md-4" style= border:1px solid;">
+        {{#each plants}}
     <img src="{{this.imageURL}}" class="w3-round"/>
-    <p>{{name}}</p>
+    <h4>{{name}}</h4>
     <a href="/plants/{{_id}}">More information</a>
-    {{/each}}
+    {{/each}} 
+        </div>       
     </div>
+
 
 </div>

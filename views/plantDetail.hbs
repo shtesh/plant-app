@@ -1,12 +1,14 @@
 <div>
     <h2>Plant Detail</h2>
-    <img src="{{imageURL}}" />
+    <div class="container-plantdetail">
+    <img src="{{imageURL}}" class="w3-round" />
     <p><i class="bi bi-bookmark">{{name}}</i></p>
     <p><i class="bi bi-graph-up">Height: {{height}}</i></p>
     <p><i class="bi bi-brightness-high">Light: {{light}}</i></p>
     <p><i class="bi bi-flower1">Flowering time: {{floweringTime}}</i></p>
     <ul> <i class="bi bi-geo-alt">Native:</i>
         {{#each native}}
+    </div>
         <li class="bi bi-cursor">{{this}}</li>
         {{/each}}
     </ul>
