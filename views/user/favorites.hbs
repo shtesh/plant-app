@@ -1,9 +1,22 @@
-<h1 class="bi bi-heart"> Here are your Favorites:</h1>
+<br>
+<h5 class="bi bi-heart">Here are your Favorites:</h>
+<br>
 {{#if userFav.favorites}}
 {{#each userFav.favorites}}
-<h3>{{name}}</h3>
-<img alt="" src="{{imageURL}}">
-</form>
+<br>
+<div class="card mb-3 bg-transparent center" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{this.imageURL}}" class="card-img" alt="image" width="250px" height="150px">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
 {{/each}}
 {{else}}
 <div>No favorites yet.</div>

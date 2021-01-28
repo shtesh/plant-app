@@ -1,18 +1,20 @@
-<div>
-    <h2>Plant Detail</h2>
-    <div class="container-plantdetail">
-    <img src="{{imageURL}}" class="w3-round" />
-    <p class="bi bi-bookmark">{{name}}</p>
-    <p class="bi bi-graph-up">Height: {{height}}</p>
-    <p class="bi bi-brightness-high">Light: {{light}}</p>
-    <p class="bi bi-flower1">Flowering time: {{floweringTime}}</p>
-    <ul class="bi bi-geo-alt">Native:
+<div class="mx-auto" style="width: 200px;">
+<br>
+  <div class="card" style="width: 16rem;">
+    
+    <img src="{{imageURL}}" class="card-img-top"/>
+      <div class="card-body">
+    
+    <h5 class="bi bi-bookmark card-title">{{name}}</h5>
+    <p class="bi bi-graph-up card-text"><b>Height:</b> {{height}}</p>
+    <p class="bi bi-brightness-high card-text"><b>Light:</b> {{light}}</p>
+    <p class="bi bi-flower1 card-text"><b>Flowering time:</b> {{floweringTime}}</p>
+    <ul class="bi bi-geo-alt card-text"><b>Native:</b>
         {{#each native}}
-    </div>
-        <li class="bi bi-cursor">{{this}}</li>
+        <div class="bi bi-cursor card-text">{{this}}</div>
         {{/each}}
     </ul>
-    <p class="bi bi-hash">Tags: {{tags}}</p>
+    <p class="bi bi-hashcard-text"><b>Tags:</b> {{tags}}</p>
     {{#if userId}}
     <form action="/user/favorites/{{_id}}" method="POST">
         <button type="submit">
@@ -25,9 +27,12 @@
     </form>
     {{/if}}
     {{#if isOwner}}
-    <h3>Edit plant</h3>
+    <br>
+    <h5>Edit plant</h5>
     {{> editPlant}}
-    <h3>Delete plant</h3>
+    <br>
     {{> deleteButton}}
     {{/if}}
+    </div>
+</div>
 </div>
