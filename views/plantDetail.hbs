@@ -2,24 +2,24 @@
     <h2>Plant Detail</h2>
     <div class="container-plantdetail">
     <img src="{{imageURL}}" class="w3-round" />
-    <p><i class="bi bi-bookmark">{{name}}</i></p>
-    <p><i class="bi bi-graph-up">Height: {{height}}</i></p>
-    <p><i class="bi bi-brightness-high">Light: {{light}}</i></p>
-    <p><i class="bi bi-flower1">Flowering time: {{floweringTime}}</i></p>
-    <ul> <i class="bi bi-geo-alt">Native:</i>
+    <p class="bi bi-bookmark">{{name}}</p>
+    <p class="bi bi-graph-up">Height: {{height}}</p>
+    <p class="bi bi-brightness-high">Light: {{light}}</p>
+    <p class="bi bi-flower1">Flowering time: {{floweringTime}}</p>
+    <ul class="bi bi-geo-alt">Native:
         {{#each native}}
     </div>
         <li class="bi bi-cursor">{{this}}</li>
         {{/each}}
     </ul>
-    <p><i class="bi bi-hash">Tags: {{tags}}</i></p>
+    <p class="bi bi-hash">Tags: {{tags}}</p>
     {{#if userId}}
     <form action="/user/favorites/{{_id}}" method="POST">
         <button type="submit">
             {{#if isFavoritePlant}}
-            <i class="bi bi-trash">Remove from Favorites</i>
+            <div class="bi bi-trash">Remove from Favorites</div>
             {{else}}
-            <i class="bi bi-heart">Add to Favorites</i>
+            <div class="bi bi-heart">Add to Favorites</div>
             {{/if}}
         </button>
     </form>

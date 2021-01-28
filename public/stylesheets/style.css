@@ -72,3 +72,9 @@
 #signup .container #signup-row #signup-column #signup-box #signup-form #signup-link {
   margin-top: -85px;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
