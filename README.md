@@ -88,5 +88,4 @@ Repository Link https://github.com/shtesh/plant-app
 Deploy Link https://plantastique.herokuapp.com
 
 Slides
-The url to your presentation slides
-Slides Link
+The url to your presentation slides https://docs.google.com/presentation/d/1SJKjU4gxbCueRNem85CZHlialJ6el_JBjzmqJ1YE6nA/edit?usp=sharing
